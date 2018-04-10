@@ -15,11 +15,11 @@ jobs:
       - run: git submodule update --init
       - run: sudo apt-get install lua5.2
       - run:
-        - name: go get
-        - command: go get -t -d -v ./...
+          name: go get
+          command: go get -t -d -v ./...
       - run:
-        - name: go build
-        - command: go build -v
+          name: go build
+          command: go build -v
       - run:
-        - name: go test
-        - command: go test -v -race ./...
+          name: go test
+          command: go test -v -race ./...
