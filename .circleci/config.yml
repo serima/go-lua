@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    environment:
+      - GOPATH: /home/circleci/repo
     working_directory: ~/repo
     docker:
       - image: circleci/golang:1.9
