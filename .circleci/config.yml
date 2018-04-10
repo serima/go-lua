@@ -3,9 +3,9 @@ jobs:
   build:
     environment:
       - GOPATH: /home/circleci/repo
-    working_directory: ~/repo
+    working_directory: /home/circleci/repo/src
     docker:
-      - image: circleci/golang:1.9
+      - image: circleci/golang:1.8
     steps:
       - checkout
       - run:
