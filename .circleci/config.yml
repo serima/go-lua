@@ -11,7 +11,7 @@ jobs:
           command: |
             echo "Golang $(go version)"
       - run: git submodule update --init
-      - run: apt-get install lua5.2
+      - run: sudo apt-get install lua5.2
       - run: go get
       - run: go build
       - run: go test
